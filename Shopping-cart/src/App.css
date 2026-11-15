@@ -1,0 +1,35 @@
+.app {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.shop-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .shop-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
